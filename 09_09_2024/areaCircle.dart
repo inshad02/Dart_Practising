@@ -1,10 +1,9 @@
 class Circle {
   var pi = 3.14;
-  // double? radius = 5;
+  double? radius = 5;
 }
 
 class Area extends Circle {
-  double? radius = 5;
   void area() {
     double area = pi * radius! * radius!;
     print("Area of circle = $area");
@@ -23,4 +22,6 @@ void main() {
   Perimetre p1 = Perimetre();
   a1.area();
   p1.perimetre();
+  p1.area();
+  print("Radius= ${p1.radius}");
 }
